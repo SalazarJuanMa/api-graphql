@@ -1,6 +1,6 @@
 # api-graphQL
 
-This project was generated with [graphql] [express] [mogodb] [babel]
+This project was generated with [nodejs] [graphql] [express] [mogodb] [babel]
 
 Build project. 
    1. folder api-graphql in VSCode. npm init -y
