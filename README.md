@@ -22,14 +22,14 @@ Build project.
 
 
 ## Development server
-Run `npm start` for a dev server with nodemon. Navigate to `http://localhost:3000/graphql`. The app will automatically reload if you change any of the source files.
+Run `npm run start-dev` for a dev server with nodemon. Navigate to `http://localhost:3000/graphql`. The app will automatically reload if you change any of the source files.
 
-Run `npm serve` for a dev server `dist/index.js`. Navigate to `http://localhost:3000/graphql`.
+Run `npm run serve` for a dev server local `dist/index.js`. Navigate to `http://localhost:3000/graphql`.
 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `build/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 It should be stored in dist! Once the cloudfront_react_app gets cloned to make an angular version, this should be reverted back to building into the `build/` directory!
 
