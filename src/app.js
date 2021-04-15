@@ -7,6 +7,7 @@ import {connect} from './mongodb/database';
 const app = express();
 dotenv.config();
 connect();
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   res.json({
@@ -17,9 +18,9 @@ app.get('/', (req, res) => {
 app.use(
   '/graphql',
   graphqlHTTP({
-    graphiql: true,
+    graphiql: process.env.GRAPHQL_VALUE,
     schema: schema,
   })
 );
 
-app.listen(process.env.PORT, () =>   console.log(`App running on PORT ${process.env.PORT}`));
+app.listen(port || 3000, () =>   console.log(`App running on PORT ${port}`));
