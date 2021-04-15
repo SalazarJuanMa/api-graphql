@@ -13,9 +13,10 @@ Build project.
    4. npm i nodemon any change restart the server.
    5. Clean dist with rimraf use npm clean
    6. npm install dotnev for enviroment variables.
-      file .env 
+      Add file .env 
             PORT=3000
             MONGO_URI="<ENTER_MONGO_URI>"
+            GRAPHQL_VALUE=true
 
 
 
