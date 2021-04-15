@@ -33,4 +33,35 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 
 It should be stored in dist! Once the cloudfront_react_app gets cloned to make an angular version, this should be reverted back to building into the `build/` directory!
 
+## Deploy 
+This Api is deployed in Heroku https://api-graphql-basic.herokuapp.com/graphql
 
+Query
+{
+  hello
+  greet(name:"Jose")
+  tasks{
+    _id
+    title
+    number
+  }
+  getUsers{
+    _id
+    firstname
+    lastname
+  }
+}
+
+For Add register in MongoDB
+mutation{
+  createUser(input:{ 
+    firstname: "Name"
+    lastname:"last"
+    age: 20
+  }){
+    _id
+    firstname
+  }
+}
+
+it also has the methods to Update or Delete the record.
