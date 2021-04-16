@@ -2,7 +2,7 @@ import { makeExecutableSchema } from "graphql-tools";
 import { resolvers } from "./resolvers";
 
 const typeDefs = `
-  
+
   type Query {
        hello: String
        greet(name: String): String
@@ -22,6 +22,9 @@ const typeDefs = `
     firstname: String!
     lastname: String!
     age: Int!
+    img: String
+    leftcolor: String
+    rigthcolot: String
   }
 
   type Mutation {
@@ -41,6 +44,9 @@ const typeDefs = `
     firstname: String!
     lastname: String!
     age: Int!
+    img: String
+    leftcolor: String
+    rigthcolot: String
   }
 
 `;
