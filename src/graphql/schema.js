@@ -21,10 +21,10 @@ const typeDefs = `
     _id: ID
     firstname: String!
     lastname: String!
-    age: Int!
+    age: Int
     img: String
     leftcolor: String
-    rigthcolot: String
+    rigthcolor: String
   }
 
   type Mutation {
@@ -43,10 +43,10 @@ const typeDefs = `
   input UserInput {
     firstname: String!
     lastname: String!
-    age: Int!
+    age: Int
     img: String
     leftcolor: String
-    rigthcolot: String
+    rigthcolor: String
   }
 
 `;
