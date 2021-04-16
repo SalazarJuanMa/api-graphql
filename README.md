@@ -2,24 +2,40 @@
 
 This project was generated with [nodejs] [graphql] [express] [mogodb] [babel]
 
-Build project. 
-   1. folder api-graphql in VSCode. npm init -y
+# Packages & Configuration 
+   1. Folder api-graphql in VSCode & Create new package.json npm init -y
    2. npm i express
-        create folder and file in src/index.js
+        create folder and file in src/app.js
    3. for use the last version of Js
       npm install --save-dev @babel/core @babel/cli @babel/preset-env
       npm install --save-dev @babel/node
       create a file .babelrc
+```
+      "presets":[
+      [
+        "@babel/preset-env", {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+```
    4. npm i nodemon any change restart the server.
    5. Clean dist with rimraf use npm clean
    6. npm install dotnev for enviroment variables.
-      Add file .env 
+      Add file .env
+```
             PORT=3000
             MONGO_URI="<ENTER_MONGO_URI>"
             GRAPHQL_VALUE=true
+```
+   7. npm install graphql-tools express-graphql graphql
+   8. npm install mongoose
 
+### CORS
 
-
+ - remember to set CORS policy to server
 
 ## Development server
 Run `npm run start-dev` for a dev server with nodemon. Navigate to `http://localhost:3000/graphql`. The app will automatically reload if you change any of the source files.
@@ -36,6 +52,7 @@ It should be stored in dist! Once the cloudfront_react_app gets cloned to make a
 ## Deploy 
 This Api is deployed in Heroku https://api-graphql-basic.herokuapp.com/graphql
 
+```
 Query
 {
   hello
@@ -51,8 +68,9 @@ Query
     lastname
   }
 }
-
+```
 For Add register in MongoDB
+```
 mutation{
   createUser(input:{ 
     firstname: "Name"
@@ -63,5 +81,5 @@ mutation{
     firstname
   }
 }
-
+```
 it also has the methods to Update or Delete the record.
