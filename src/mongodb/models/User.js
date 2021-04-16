@@ -9,7 +9,7 @@ const userSchema = new Schema ({
      age: Number,
      img: String,
      leftcolor: String,
-     rigthcolot: String
+     rigthcolor: String
 });
 
 export default model('User', userSchema)
